@@ -1,5 +1,9 @@
 :root {
   --bgcolor:#ffffff;
-  --textColor:#000000
+  --textColor:#252020;
 }
-
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}

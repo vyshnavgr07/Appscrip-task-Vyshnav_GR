@@ -1,0 +1,29 @@
+.navigation {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap:64px;
+  }
+  
+  .navigationItem {
+    margin-right: 1rem;
+  }
+  
+  .navigationItem a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .navigationItem a:hover {
+    color: #000;
+  }
+  .text{
+  font-family:'Simplon Norm', sans-serif; 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color:var(--textColor);
+}
