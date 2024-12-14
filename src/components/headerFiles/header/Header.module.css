@@ -1,11 +1,8 @@
 .header{
-
-    background-color:var(--bgcolor);
-    padding: 0 50px; 
+/* background-color:var(--bgcolor); */
+padding: 0 50px; 
+box-sizing: border-box;
 }
-
-
-
 .logoStyle {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
@@ -15,22 +12,21 @@
   }
 
 .firstContainer{
-margin-top:5px;
+   margin-top:5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding:5px;
+    background-color: #fff; 
+
 }
   .headerleft {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding:5px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+ }
   
 
   .headerright{
@@ -41,10 +37,6 @@ margin-top:5px;
 
 
   
-  .headerleft> *,
-  .headerright > * {
-    margin-right: 1rem;
-  }
 
 .middle{
     background-color:var(--bgcolor);
@@ -53,13 +45,11 @@ margin-top:5px;
 .second{
     height:100%;
   display: flex;
+  margin-top:15px;
     justify-content: center;
     align-items: center;
 }
 
-.secondClosed {
-  display: none;
-}
 
 .hamburger {
   display: none;
@@ -69,33 +59,55 @@ margin-top:5px;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .headerright {
-    display: none;
-  }
+.secondClosed {
+display: none;
+padding: 5px;;
+margin: 5px;;
 
+}
+
+
+@media (max-width: 768px) {
 .hamburger {
     display: block;
-    font-size: 24px;
+    font-size: 18px;
     background: none;
     border: none;
     cursor: pointer;
   }
 
-  .second {
-   flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  .header{
+    padding:0px; 
+      }
+    
+      .logoStyle {
+      font-weight: 800;
+        font-size:20px;
+        line-height:24.2px;
+        letter-spacing: 1px;
+      }
 
-  .open {
-    display: flex;
-  }
+      .headerleft {
+        display: flex;
+        gap:16px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .headerright{
+      gap:12px;
+      }
+    .second{
+      display:none;
+      }
+      .secondClosed {
+        display:block;
+
+
+      }
+      
+
 
 }

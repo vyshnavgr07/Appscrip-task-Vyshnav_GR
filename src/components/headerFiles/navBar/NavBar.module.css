@@ -5,6 +5,8 @@
     padding: 0;
     gap:64px;
   }
+
+
   
   .navigationItem {
     margin-right: 1rem;
@@ -19,11 +21,38 @@
   .navigationItem a:hover {
     color: #000;
   }
+
   .text{
-  font-family:'Simplon Norm', sans-serif; 
-  font-weight: 700;
+ font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1px;
   color:var(--textColor);
+}
+
+@media (max-width:768px) {
+  .navigationItem {
+    margin-right:0;
+}
+
+.navigationItem a:hover {
+  color:#BFC8CD;
+}
+
+.navigationItem:first-child{
+border-right:2px solid #BFC8CD;
+padding-right: 8px
+}
+
+.text{
+font-weight: 400;
+  font-size: 12px;
+  line-height: 14.4px;
+  letter-spacing: 1px;
+  color:var(--textColor);
+}
+
+  .navigation {
+    gap:8px;
+  }
 }

@@ -1,0 +1,77 @@
+.container {
+  background-color: #fff;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  height: 462px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 399px;
+  object-fit: cover;
+}
+
+.newProduct {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.actions {
+  display: flex;
+  align-items: center;
+ }
+
+.linksText {
+  text-decoration:none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888792;
+  display: flex;
+  align-items: center;
+  gap: 4px; 
+}
+
+.spacing {
+  margin: 0 4px; 
+}
+
+.favoriteButton {
+background-color: transparent;
+  border: 2px solid #ffffff;
+  padding:5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+
+}
+.icon{
+  width:24px;
+  height:24px;
+  border: #000;
+}
+.favoriteButton svg path {
+  fill:#ffffff;
+
+}
+
+.link{
+  text-decoration: none;
+}

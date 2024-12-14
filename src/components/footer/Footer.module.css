@@ -1,0 +1,363 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        margin:20px 0;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+  }
+  
+  .leftCol,
+  .rightCol {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .subscribeContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .emailInput {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .subscribeButton {
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .contact {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .currency {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .note {
+    font-size: 12px;
+  }
+  
+.secondContainer{
+display:flex;
+/* background-color:gray; */
+width: 100%;
+height: auto; 
+margin-top:50px;
+}
+
+
+  .leftContainer {
+    display: flex;
+    justify-content:space-evenly;
+    /* width:50%; */
+    flex: 1;
+    /* background-color:blue; */
+    height:100%;
+  }
+
+  .rightContainer{
+    /* width:50%; */
+    flex: 1;
+    display:flex;
+    /* background-color:red; */
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+  
+
+
+  .quickLinksList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    font-size: 18px;
+  }
+
+  .quickLinksItemHead{
+    font-size: 24.71px;
+    font-weight: 700;
+    line-height: 29.66px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .quickLinksItem {
+    font-weight: 400;
+    line-height: 21.6px;
+    color:#FFFFFF;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .socialContainer {
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    flex-grow: 1;
+ 
+  .text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .socialLink {
+  display: inline-block;
+   border:1px solid white;
+   margin-right:10px;
+   border-radius:50%;
+   padding:3px;
+ }
+
+
+  }
+  
+
+  
+
+  
+  .paymentContainer {
+    display: flex;
+    flex-direction:column;
+   margin-top:20px;
+   flex-grow: 1;
+    .text{
+        font-weight:700;
+        font-size:20px;
+        line-height:24px;
+    }
+    .imageContainer{
+        display: flex;
+        gap:8px;
+        margin-top:10px;
+    }
+  }
+  
+
+  
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    margin-top:10px;
+  }
+
+
+
+
+.dropContainer {
+display:none;
+  width: 100%;
+  background-color: #000;
+ box-sizing: border-box;
+
+  .quickLinksItemHead {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .dropdownIcon {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+  }
+
+  .quickLinksList {
+    width: 100%;
+    .dropdownList {
+      list-style: none;
+      font-size: 700;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .quickLinksItem {
+      font-size: 24px;
+    }
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+ .container {
+    flex-direction: column;
+      padding: 0 20px;
+}
+
+.footer{
+    padding:20px;
+}
+
+.secondContainer{
+margin-top:0;
+padding:5px;
+}
+
+.dropSub{
+    padding:10px;
+    border-bottom: 1px solid white;
+}
+
+
+.dropContainer{
+    display:block;
+
+}
+  
+    .rightContainer,.leftContainer {
+     display:none;
+    }
+
+    .selectBoxContainer{
+        display: block;
+
+    }
+  
+    .title {
+      font-size: 16px;
+    }
+  
+    .description {
+      font-size: 12px;
+    }
+  
+    .subscribeContainer {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .emailInput, .subscribeButton {
+      width: 100%;
+    }
+  
+    .quickLinksList {
+      font-size: 16px;
+    }
+  
+    .socialContainer {
+      margin-top: 10px;
+    }
+  
+    .socialLink {
+      font-size: 14px;
+      padding: 2px;
+    }
+  
+    .paymentContainer {
+      margin-top: 10px;
+    }
+  
+    .imageContainer {
+      margin-top: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .title {
+      font-size: 14px;
+    }
+  
+    .description {
+      font-size: 10px;
+    }
+  
+    .subscribeContainer {
+      flex-direction: column;
+      gap: 6px;
+    }
+  
+    .emailInput {
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .subscribeButton {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  
+    .quickLinksList {
+      font-size: 14px;
+    }
+  
+    .socialContainer {
+      flex-direction: row;
+      gap: 6px;
+    }
+  
+    .socialLink {
+      padding: 2px;
+    }
+  
+    .paymentContainer {
+      font-size: 14px;
+    }
+  
+    .imageContainer {
+      margin-top: 2px;
+    }
+  }

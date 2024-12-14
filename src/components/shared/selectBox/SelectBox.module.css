@@ -1,0 +1,42 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+  text-indent: 10px;
+  color:var(--textColor);
+  border: 1px solid white;
+  border-radius: 6px;
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 12px;
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-image: url('./Arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid var(--textColor);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.options {
+ font-size: medium;
+  color:var(--textColor);
+}
+
+.label {
+font-size: x-large;
+color:var(--textColor);
+  padding:2px;
+}

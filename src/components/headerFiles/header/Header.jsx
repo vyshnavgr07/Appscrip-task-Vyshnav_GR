@@ -22,7 +22,7 @@ const Header = () => {
     <div className={styles.firstContainer}> 
       <div className={styles.headerleft}>
       <button className={styles.hamburger} onClick={toggleMenu}>
-            ☰
+      ☰
       </button>
         <Logo />
        </div>
@@ -36,8 +36,15 @@ const Header = () => {
       <Icon Icon={CiUser} className={styles.icon} />
       </div>
       </div>
-      <div className={`${styles.second} ${isMenuOpen ? styles.open : ''}`}>
+
+
+
+      <div className={`${styles.second}`}>
         <Nav links={links} />
+      </div>
+      <div className={`${styles.secondClosed}`}>
+        <Nav links={[   { text: 'HOME', url: '/' },
+       { text: 'SHOP', url: '/shop' },]} />
       </div>
     </header>
   );
