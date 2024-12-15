@@ -6,8 +6,8 @@ const NavBar = ({ links }) => {
         <ul className={styles.navigation}>
           {links.map((link) => (
             <li key={link.url} className={styles.navigationItem}>
-              <Link href={link.url}>
-              <p className={styles.text}>{link.text}</p>
+              <Link className={styles.text} href={link.url}>
+              {link.text}
               </Link>
             </li>
           ))}

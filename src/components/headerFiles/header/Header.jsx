@@ -45,6 +45,7 @@ const Header = () => {
       <div className={`${styles.secondClosed}`}>
         <Nav links={[   { text: 'HOME', url: '/' },
        { text: 'SHOP', url: '/shop' },]} />
+    
       </div>
     </header>
   );

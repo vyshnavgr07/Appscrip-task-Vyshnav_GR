@@ -4,7 +4,8 @@
     align-items: center;
     padding: 10px 20px;
     border-top:1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid  var(--borderColor);
+    border-top: 2px solid  var(--borderColor);
     font-family: Arial, sans-serif;
     font-size: 14px;
     min-height: 88px;
@@ -14,6 +15,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-grow:1;
   }
   
   .itemCount {
@@ -40,6 +42,8 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    flex-grow:1;
+    justify-content: flex-end;
   }
   
   .recommended {
@@ -47,5 +51,52 @@
     color: #000;
   }
   
+  .mobFilter{
+    display:none;
+  }
 
+
+
+  @media (max-width:768px) {
+
+
+    .itemCount{
+      display:none;
+      }
+      .hideFilter{
+        display:none;
+      }
+
+      .mobFilter{
+        display:block;
+        font-family: Simplon Norm;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.8px;
+        text-align: left;
+
+
+      }
+
+      .leftSection {
+        display: flex;
+        flex-grow:1;
+  
+        align-items: center;
+        justify-content:center;
+        gap: 10px;
+      }
+
+      .rightSection {
+        display: flex;
+        flex-grow:1;
+        justify-content: center;
+        align-items: center;
+        gap:2px;
+        flex-grow:1;
+        justify-content:center;
+
+      }
+    
+  }
   

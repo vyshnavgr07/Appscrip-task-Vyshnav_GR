@@ -15,6 +15,11 @@ const DropdownSelect = () => {
     "Price : Low to High",
   ];
 
+
+  
+
+
+
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const selectOption = (option) => {
@@ -22,7 +27,6 @@ const DropdownSelect = () => {
     setIsOpen(false);
   };
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {

@@ -12,36 +12,31 @@
     margin-right: 1rem;
   }
   
-  .navigationItem a{
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  .navigationItem a:hover {
-    color: #000;
-  }
 
-  .text{
+.text{
+    text-decoration: none;
  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1px;
   color:var(--textColor);
+  font-family:var(--font-poppins);
 }
+
+.text a:hover {
+  color: #000;
+}
+
+
 
 @media (max-width:768px) {
   .navigationItem {
     margin-right:0;
 }
 
-.navigationItem a:hover {
-  color:#BFC8CD;
-}
-
 .navigationItem:first-child{
 border-right:2px solid #BFC8CD;
-padding-right: 8px
+padding-right: 8px;
 }
 
 .text{
@@ -50,7 +45,11 @@ font-weight: 400;
   line-height: 14.4px;
   letter-spacing: 1px;
   color:var(--textColor);
+ font-style:var(--font-poppins);
 }
+
+
+
 
   .navigation {
     gap:8px;
