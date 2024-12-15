@@ -1,15 +1,14 @@
 .dropdownContainer {
     position: relative;
-    width:148px;
-    font-family: Arial, sans-serif;
+    width:235px;
+    font-family:var(--font-poppins);
     font-size: 14px;
-
   }
   
   .dropdownHeader {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   align-items: center;
+   justify-content: center;
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
@@ -48,7 +47,7 @@
     justify-content: flex-start;
     color: #333;
   font-size: 18px;
-font-weight: 700;
+font-weight: 400;
 line-height: 40px;
 text-align: left;
 }

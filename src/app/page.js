@@ -19,8 +19,8 @@ export default function Home() {
     <div className={styles.titleContainer}>
      <Title/>
    </div>
-
- <FilterHeader handleSidebar={handleSidebar} isSidebar={isSidebar}/>
+   <div className={styles.secondContainer}> 
+<FilterHeader handleSidebar={handleSidebar} isSidebar={isSidebar}/>
   <div className={styles.mainContainer}>
   {isSidebar && 
   <div className={styles.sidebar}>
@@ -29,6 +29,7 @@ export default function Home() {
 }
 <div className={styles.productList}>
   <ProductList/>
+   </div>
   </div>
   </div>
 </div>

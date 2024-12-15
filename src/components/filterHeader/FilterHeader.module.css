@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
     font-size: 14px;
     min-height: 88px;
-  }
+   }
   
   .leftSection {
     display: flex;
@@ -58,14 +58,22 @@
 
 
   @media (max-width:768px) {
-
-
-    .itemCount{
+  .itemCount{
       display:none;
       }
       .hideFilter{
         display:none;
       }
+
+
+      .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding:5px 20px; */
+         font-size: 14px;
+        min-height:auto;
+       }
 
       .mobFilter{
         display:block;
@@ -81,7 +89,6 @@
       .leftSection {
         display: flex;
         flex-grow:1;
-  
         align-items: center;
         justify-content:center;
         gap: 10px;
@@ -95,7 +102,6 @@
         gap:2px;
         flex-grow:1;
         justify-content:center;
-
       }
     
   }

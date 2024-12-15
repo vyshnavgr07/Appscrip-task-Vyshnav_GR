@@ -1,53 +1,39 @@
 .mainContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Automatically adjust columns */
-    gap: 50px; /* Spacing between items */
-    padding: 10px; /* Optional padding around the grid */
-  }
-  
-  .cardContainer {
-    padding: 10px;
-    background-color: #f9f9f9; /* Optional: Add styling to cards */
-    border: 1px solid #eee; /* Optional: Border around cards */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Card shadow */
-  }
-  
-
-  @media (max-width: 768px) {
-    .mainContainer {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller card sizes for medium screens */
-      gap: 8px; /* Adjust spacing */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .mainContainer {
-      grid-template-columns: 1fr; /* Single column layout for small screens */
-      gap: 5px; /* Reduced spacing */
-    }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-/* .mainContainer {
- display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    gap:5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap:10px; 
+  padding: 10px; 
 }
 
-.cardContainer {
-   padding: 10px;
-   flex-grow:1;
-} */
+@media (max-width: 1200px) {
+  .mainContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

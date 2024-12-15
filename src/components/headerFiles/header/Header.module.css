@@ -1,9 +1,8 @@
 .header{
-/* background-color:var(--bgcolor); */
+background-color:var(--bgcolor);
 padding:0 50px; 
 box-sizing: border-box;
 padding-bottom:10px;
-
 }
 .logoStyle {
     font-family: 'Inter', sans-serif;
@@ -70,6 +69,9 @@ margin: 5px;;
 }
 
 
+
+
+
 @media (max-width: 768px) {
 .hamburger {
     display: block;
@@ -78,6 +80,11 @@ margin: 5px;;
     border: none;
     cursor: pointer;
   }
+
+ .hide{
+  display: none !important;
+  }
+
 
   .header{
     padding:0px; 

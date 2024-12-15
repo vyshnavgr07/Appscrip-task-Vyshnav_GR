@@ -33,9 +33,28 @@
      display: flex;
  }
 
+ .secondContainer{
+  padding:0 30px;
+ }
 
- @media (max-width :768px) {
+
+
+ @media (max-width :768x) {
   .sidebar{
     display:none;
   }
+
+  .secondContainer{
+    padding:0 ;
+   }
+
+  .titleContainer{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+  
+  }
  }
+
+

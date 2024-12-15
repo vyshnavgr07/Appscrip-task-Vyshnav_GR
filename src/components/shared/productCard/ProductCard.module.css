@@ -1,9 +1,10 @@
 .container {
   background-color: #fff;
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
-  height: 462px;
+  width:100%;
+  height:auto;
+  position: relative;
 }
 
 .title {
@@ -13,7 +14,7 @@
 }
 
 .imageContainer {
-  position: relative;
+position: relative;
 }
 
 .image {
@@ -26,33 +27,62 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background-color: #000;
-  color: #fff;
-  padding: 4px 8px;
+  color:var(--textColor);
   border-radius: 4px;
   font-size: 14px;
   font-weight: bold;
 }
 
+.stockOut {
+ background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #ff0000;
+  font-weight: bold;
+  z-index: 1; 
+  font-weight:700;
+  font-size:20px;
+  padding:20px;
+  opacity:0.8;
+
+}
+
+
+
+
 
 .actions {
   display: flex;
   align-items: center;
+  line-height:40px;
  }
 
-.linksText {
-  text-decoration:none;
-  font-size: 14px;
-  font-weight: 400;
-  color: #888792;
+
+ .linksDiv {
   display: flex;
-  align-items: center;
+  align-items: center; 
+  justify-content: flex-start; 
+  flex-wrap: nowrap; 
   gap: 4px; 
+  white-space: nowrap; 
+}
+
+.link {
+  text-decoration: none;
+  color: #888792; 
+  font-size: 14px;
 }
 
 .spacing {
-  margin: 0 4px; 
+  margin: 0;
+  color: #888792; 
 }
+
+
 
 .favoriteButton {
 background-color: transparent;
@@ -89,3 +119,5 @@ background-color: transparent;
    
   }
 }
+
+

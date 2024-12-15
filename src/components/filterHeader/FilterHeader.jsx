@@ -17,7 +17,8 @@ const FilterHeader = ({handleSidebar,isSidebar}) => {
            {isSidebar?"HIDE FILTER":"SHOW FILTER"}
         </span>
 
-        <span className={styles.mobFilter}>FILTER</span>
+        <span className={styles.mobFilter}>FILTER </span>
+        <span className={styles.divider}></span>
       </div>
 
       {/* Right Section */}

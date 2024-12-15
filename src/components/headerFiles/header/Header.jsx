@@ -7,6 +7,7 @@ import { CiSearch,CiHeart,CiUser  } from "react-icons/ci";
 import styles from './Header.module.css'
 import Icon from '../icons/Icon';
 import { RiHandbagLine } from "react-icons/ri";
+import SelectBox from '../languageSelectBox/SelectBox';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const links = [
@@ -16,6 +17,8 @@ const Header = () => {
     { text: 'About', url: '/about' },
     { text: 'Contact Us', url: '/contact' },
   ];
+
+  const languageOptions=["Eng","Mal"]
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
     <header className={styles.header}>
@@ -30,10 +33,16 @@ const Header = () => {
         <p className={styles.logoStyle}>LOGO</p>
         </div>
       <div className={styles.headerright}>
-      <Icon Icon={CiSearch} className={styles.icon} />
-      <Icon Icon={CiHeart} className={styles.icon} />
-      <Icon Icon={RiHandbagLine} className={styles.icon} />
-      <Icon Icon={CiUser} className={styles.icon} />
+      <Icon Icon={CiSearch} />
+      <Icon Icon={CiHeart} />
+      <Icon Icon={RiHandbagLine} />
+      <div  className={styles.hide} >
+      <Icon Icon={CiUser} />
+      </div>
+      <div  className={styles.hide} >
+      <SelectBox options={languageOptions} />
+      </div>
+  
       </div>
       </div>
 
