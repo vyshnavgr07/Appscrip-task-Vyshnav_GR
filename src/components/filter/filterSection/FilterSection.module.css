@@ -1,0 +1,34 @@
+.section {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .sectionHeader h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .sectionContent {
+    margin-top: 5px;
+  }
+  
+  .sectionContent label {
+    display: block;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .sectionContent p {
+    color: #555;
+    margin: 0;
+  }
+  

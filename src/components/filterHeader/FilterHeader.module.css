@@ -1,0 +1,51 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top:1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    min-height: 88px;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .itemCount {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .hideFilter {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #666;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+  
+  .arrow {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #666;
+  }
+  
+  .rightSection {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .recommended {
+    font-weight: bold;
+    color: #000;
+  }
+  
+
+  

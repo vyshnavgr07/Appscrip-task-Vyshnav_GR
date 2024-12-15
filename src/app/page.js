@@ -10,6 +10,7 @@ export default function Home() {
      <Title/>
    </div>
      <ProductCard/>
+     
      </div>
   );
 }

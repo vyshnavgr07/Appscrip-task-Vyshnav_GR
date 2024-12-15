@@ -108,7 +108,7 @@ const footerLinks = {
 
   <div className={styles.dropContainer}>
   {Object.entries(footerLinks).map(([title, links]) => (
-    <div className={styles.dropSub}> 
+    <div className={styles.dropSub} key={title}> 
     <ul className={styles.quickLinksList} key={title}>
       <li 
         onClick={() => handleDropdown(title)}
