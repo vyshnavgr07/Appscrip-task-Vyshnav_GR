@@ -7,21 +7,25 @@
 
 @media (max-width: 1200px) {
   .mainContainer {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 900px) {
   .mainContainer {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-  }
+    grid-template-columns: repeat(2, 1fr); 
+   }
 }
 
 @media (max-width: 600px) {
   .mainContainer {
-    grid-template-columns: 1fr; 
-  }
+    grid-template-columns: repeat(2, 1fr); 
+    padding:0;
+    
+   }
 }
+
+
 
 
 

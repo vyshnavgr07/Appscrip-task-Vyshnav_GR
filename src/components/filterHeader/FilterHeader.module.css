@@ -73,6 +73,7 @@
         /* padding:5px 20px; */
          font-size: 14px;
         min-height:auto;
+        margin-top:20px;
        }
 
       .mobFilter{
@@ -82,6 +83,7 @@
         font-weight: 700;
         line-height: 16.8px;
         text-align: left;
+        cursor: pointer;
 
 
       }
