@@ -1,0 +1,39 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap:10px; 
+  padding: 10px; 
+}
+
+@media (max-width: 1200px) {
+  .mainContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .mainContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .mainContainer {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

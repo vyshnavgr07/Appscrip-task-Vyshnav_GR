@@ -1,0 +1,39 @@
+.selectContainer {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    border: none; /* Remove any border */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.selectBox {
+    appearance: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--textColor);
+    font-family: var(--font-poppins);
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    border: none; /* Remove any default border */
+    background-color: transparent; /* Remove default background color */
+    padding-right: 30px; /* Space for the arrow */
+    border-radius: 5px; /* Optional: Round the corners */
+}
+
+.selectBox:focus {
+    border-color: #555; /* Custom border color on focus */
+}
+
+.arrow {
+    content: '⌄';
+    position: absolute;
+    right: 30px;
+    top: 20%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 24px;
+    color: #000;
+}

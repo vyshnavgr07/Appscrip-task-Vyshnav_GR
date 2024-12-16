@@ -1,5 +1,14 @@
 :root {
   --bgcolor:#ffffff;
-  --textColor:#000000
+  --textColor:#252020;
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins:'Poppins', sans-serif;
+  --borderColor:#E5E5E5;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: inherit;
 }
 
