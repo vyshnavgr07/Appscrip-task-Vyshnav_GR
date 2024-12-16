@@ -1,13 +1,15 @@
+'use client'
 import React from 'react';
 import styles from './ProductCard.module.css';
 import Image from 'next/image';
 import pro from '../../../../public/pro1.jpg'
 import Link from 'next/link';
+
 const ProductCard = ({
-  productImage =pro, 
+  productImage, 
   productName = 'Default Product Name',
-  isOutOfStock = false,
-  isNewProduct = false
+  isOutOfStock=true,
+  isNewProduct=true
 }) => {
   return (
     <div className={styles.container}>
@@ -17,7 +19,7 @@ const ProductCard = ({
       </div>
       }
       <div className={styles.imageContainer}>
-        <Image src={pro} className={styles.image} alt='products' />
+        <Image src={productImage||pro} className={styles.image} alt='products' />
         {isNewProduct &&
         <div className={styles.newProduct}>NEW PRODUCT</div>
         }
@@ -27,11 +29,11 @@ const ProductCard = ({
         <h3 className={styles.title}>{productName}</h3>
         <div className={styles.actions}>
         <div className={styles.linksDiv}>
-        <Link href="" className={styles.link} style={{ textDecoration: 'none' }}>
+        <Link href="/" className={styles.link} >
     Sign in
   </Link>
   <span className={styles.spacing}> or </span>
-  <Link href="" className={styles.link}  >
+  <Link href="/" className={styles.link}  >
     Create an account
   </Link>
   <span className={styles.spacing}> see pricing </span>
