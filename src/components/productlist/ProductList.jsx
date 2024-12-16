@@ -10,9 +10,8 @@ const ProductList = () => {
 return (
    
     <div className={styles.mainContainer}>
-    
-      {[...Array(10)].map((_, i) => (
-        <div key={i} className={styles.cardContainer}>
+     {[...Array(10)].map((_, i) => (
+        <div key={i} >
           <ProductCard    isOutOfStock ={true} isNewProduct = {true} />
         </div>
       ))}
