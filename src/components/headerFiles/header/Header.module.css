@@ -28,6 +28,7 @@ padding-bottom:10px;
     align-items: center;
     padding:5px;
     background-color: #fff;
+   
  }
   
 
@@ -35,6 +36,7 @@ padding-bottom:10px;
     display: flex;
     align-items: center;
     gap:24px;
+    
   }
 
 
@@ -42,6 +44,8 @@ padding-bottom:10px;
 
 .middle{
     background-color:var(--bgcolor);
+    padding-left: 120px;
+
 }
 
 .second{
@@ -122,6 +126,9 @@ margin: 5px;;
 
       }
       
+      .middle{
+padding-left:0;
+      }
 
 
 }

@@ -1,16 +1,20 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ProductCard.module.css';
 import Image from 'next/image';
 import pro from '../../../../public/pro1.jpg'
 import Link from 'next/link';
+import axios from 'axios';
 
 const ProductCard = ({
-  productImage, 
+  // productImage={pro}, 
   productName = 'Default Product Name',
   isOutOfStock=true,
   isNewProduct=true
 }) => {
+
+
+
   return (
     <div className={styles.container}>
       {isOutOfStock && 
@@ -19,7 +23,7 @@ const ProductCard = ({
       </div>
       }
       <div className={styles.imageContainer}>
-        <Image src={productImage||pro} className={styles.image} alt='products' />
+        <Image src={pro}    className={styles.image} alt="Product image description"/>
         {isNewProduct &&
         <div className={styles.newProduct}>NEW PRODUCT</div>
         }
