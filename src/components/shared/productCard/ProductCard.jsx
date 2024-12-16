@@ -16,13 +16,8 @@ const ProductCard = ({
     <div className={styles.container}>
       {isOutOfStock && <div className={styles.stockOut}>out of stock</div>}
       <div className={styles.imageContainer}>
-        {/* <Image
-          src={productImage}
-          className={styles.image}
-          alt="Product image description"
-          fill={true}
-        /> */}
-             <Image
+ 
+          <Image
           src={pro}
           className={styles.image}
           alt="Product image description"
