@@ -15,13 +15,13 @@
 
 .imageContainer {
 position: relative;
+width: 100%;
+height: 399px;
+object-fit: cover;
+object-position: center; 
 }
 
-.image {
-  width: 100%;
-  height: 399px;
-  object-fit: cover;
-}
+
 
 .newProduct {
   position: absolute;
@@ -31,6 +31,7 @@ position: relative;
   border-radius: 4px;
   font-size: 14px;
   font-weight: bold;
+  z-index:1;
 }
 
 .stockOut {
@@ -114,7 +115,7 @@ background-color: transparent;
     width:168px;
     height:277px;
   }
-  .image {
+  .imageContainer{
     width: 100%;
     height:224px;
    
