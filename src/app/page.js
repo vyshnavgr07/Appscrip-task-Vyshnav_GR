@@ -1,7 +1,6 @@
 'use client'
 import styles from "./page.module.css";
 import Title from "@/components/home/title/Title";
-import ProductCard from "@/components/shared/productCard/ProductCard";
 import FilterHeader from "@/components/filterHeader/FilterHeader";
 import FilterSidebar from "@/components/filter/filterSidear/FilterSidebar";
 import ProductList from "@/components/productlist/ProductList";
