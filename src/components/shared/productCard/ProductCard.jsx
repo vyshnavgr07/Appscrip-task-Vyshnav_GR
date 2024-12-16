@@ -17,7 +17,7 @@ const ProductCard = ({
       </div>
       }
       <div className={styles.imageContainer}>
-        <Image src={pro} className={styles.image} />
+        <Image src={pro} className={styles.image} alt='products' />
         {isNewProduct &&
         <div className={styles.newProduct}>NEW PRODUCT</div>
         }
