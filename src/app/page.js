@@ -7,7 +7,7 @@ import ProductList from "@/components/productlist/ProductList";
 import { useState } from "react";
 import Head from "next/head";
 export default function Home() {
-  const [isSidebar, setIsSidebar] = useState(true);
+  const [isSidebar, setIsSidebar] = useState(false);
 
   const handleSidebar = () => {
     setIsSidebar((prev) => !prev);

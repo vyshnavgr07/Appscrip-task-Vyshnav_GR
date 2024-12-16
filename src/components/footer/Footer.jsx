@@ -56,6 +56,16 @@ const footerLinks = {
           <p className={styles.currency}>🇺🇸 - USD</p>
           <p className={styles.note}>Transactions will be completed in Euro and a currency reference is available on hover.</p>
         </div>
+
+<div className={styles.rightColHidden}>
+<p className={styles.callus}>Call Us</p>
+<div>
+<span className={styles.span}>+44 221 133 5360</span>
+<span>customercare@mettamuse.com</span>
+</div>
+</div>
+
+
       </div>
 
            {/* divider */}
@@ -128,6 +138,18 @@ const footerLinks = {
     </ul>
     </div>
   ))}
+
+<div className={styles.paymentContainer}>
+    <p className={styles.text}>mettā muse Accepts</p>
+    <div className={styles.imageContainer}>
+    <Image src={gpay} alt="Google Pay" className={styles.paymentIcon} />
+        <Image src={visa} alt="Mastercard" className={styles.paymentIcon} />
+        <Image src={paypal} alt="PayPal" className={styles.paymentIcon} />
+        <Image src={amex} alt="American Express" className={styles.paymentIcon} />
+        <Image src={applepay} alt="Apple Pay" className={styles.paymentIcon} />
+        <Image src={dpay}alt="Dapay" className={styles.paymentIcon} />
+    </div>
+   </div>
 </div>
 
 
